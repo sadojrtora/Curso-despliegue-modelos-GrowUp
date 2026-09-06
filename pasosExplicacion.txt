@@ -1,0 +1,15 @@
+Construir el bundle
+Serializar con joblib(guardar el bundle)
+Verificar que el bundle funcione correctamente y que pueda predecir correctamente
+Constuir la API y todos sus propiedades
+4.1. Cargar el bundle
+4.2 Configurar la API
+4.3 Construir las clases para la entrada y la salida
+4.4 Construir el endpoint de verificación 
+4.5 Construir el endpoint de predicción
+4.5.1 Convertir a diccionario la entrada
+4.5.2 Aplicar transformaciones (si las hay)
+4.5.3 Predecir los valores
+4.5.4 Retornar los resultados en la clase de salida
+4.6 Arrancar el modelo (ejemplo uvicorn proyecto_1.main:app -- reload)
+4.7 Probar la API
