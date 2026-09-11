@@ -6,10 +6,16 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-from Proyecto2.inferencia import pronosticar
-from Proyecto2.schema import solicitudPronostico
+#from Proyecto2.inferencia import pronosticar
+#from Proyecto2.schema import solicitudPronostico
 
-bundle_name = "Proyecto2/modelo_demanda.joblib"
+from inferencia import pronosticar
+from schema import solicitudPronostico
+
+#bundle_name = "Proyecto2/modelo_demanda.joblib"
+
+bundle_name = "modelo_demanda.joblib"
+
 
 estado_servicio = {"bundle": None}
 

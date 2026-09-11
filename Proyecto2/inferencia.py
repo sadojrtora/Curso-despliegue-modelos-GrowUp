@@ -3,7 +3,9 @@ import pandas as pd
 import numpy as np
 
 # Se pueden traer todas las funciones de features.py, pero solo se necesita crear_features para pronosticar
-from Proyecto2.features import crear_features 
+# from Proyecto2.features import crear_features 
+
+from features import crear_features 
 
 def pronosticar(bundle, historial, horizonte=14):
     """

@@ -4,7 +4,7 @@ Verificar que el bundle funcione correctamente y que pueda predecir correctament
 Constuir la API y todos sus propiedades
 4.1. Cargar el bundle
 4.2 Configurar la API
-4.3 Construir las clases para la entrada y la salida
+4.3 Construir las clases para la entrada y la salida en schema.py
 4.4 Construir el endpoint de verificación 
 4.5 Construir el endpoint de predicción
 4.5.1 Convertir a diccionario la entrada
