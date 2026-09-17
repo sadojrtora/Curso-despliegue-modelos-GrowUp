@@ -15,7 +15,9 @@ ENV PYTHONDONTWRITEBYTECODE=1  \
 # Updates the Debian package index.
 # Installs libgomp1, a runtime library commonly required by machine-learning libraries such as NumPy, scikit-learn, or XGBoost.
 # Deletes the downloaded package lists to keep the Docker image smaller
-RUN apt-get update \ && apt-get install -y --no-install-recommends libgomp1 \ && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libgomp1 \ 
+    && rm -rf /var/lib/apt/lists/*
 
 # Copiar los archivos de requerimientos y el código fuente al contenedor
 COPY requirements.txt .
